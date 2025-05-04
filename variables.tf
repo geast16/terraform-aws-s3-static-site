@@ -1,16 +1,9 @@
-# Define variables for reusability and easy configuration
-variable "aws_region" {
-  default = "ca-central-1"
-}
-
 variable "bucket_name" {
-  default = "my-static-website-bucket-67543"
+  description = "This is the bucket name for S3"
+  default     = "aws-terraformm-bucket-project-05-03"
 }
 
 variable "website_index_document" {
-  default = "index.html"
-}
-
-variable "website_error_document" {
-  default = "error.html"
+  description = "This is the website index document"
+  default     = "index.hmtl"
 }
